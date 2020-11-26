@@ -1,4 +1,4 @@
-package com.zainpradana.sqlitepenjualan.ui.datapelanggan;
+package com.zainpradana.sqlitepenjualan.ui.pelanggan;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
