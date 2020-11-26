@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import com.zainpradana.sqlitepenjualan.R;
+import com.zainpradana.sqlitepenjualan.ui.datapelanggan.DataPelanggan;
 
 public class HalamanUtama extends AppCompatActivity {
     Button buttonDataPelanggan, buttonDataBarang, buttonPenjualan;
