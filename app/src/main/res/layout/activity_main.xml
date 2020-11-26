@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     android:padding="15dp"
-    tools:context=".view.login.MainActivity">
+    tools:context=".ui.login.MainActivity">
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -14,7 +14,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="19dp"
-        android:text="Selamat Datang di Tokopaedi"
+        android:text="Aplikasi Tokopaedi"
         android:textColor="#2bcc2d"
         android:textStyle="bold"
         android:textSize="26sp"

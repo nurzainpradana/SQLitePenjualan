@@ -1,4 +1,4 @@
-package com.zainpradana.sqlitepenjualan.view.login;
+package com.zainpradana.sqlitepenjualan.ui.login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.zainpradana.sqlitepenjualan.R;
+import com.zainpradana.sqlitepenjualan.ui.halamanutama.HalamanUtama;
 
 public class MainActivity extends AppCompatActivity {
     Button btnLogin;
