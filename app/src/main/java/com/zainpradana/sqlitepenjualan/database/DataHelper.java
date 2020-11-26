@@ -1,4 +1,4 @@
-package com.zainpradana.sqlitepenjualan;
+package com.zainpradana.sqlitepenjualan.database;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
