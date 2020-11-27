@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SQLitePenjualan">
-        <activity android:name=".ui.pelanggan.UpdatePelanggan"></activity>
+        <activity android:name=".ui.pelanggan.TambahPelanggan"></activity>
+        <activity android:name=".ui.pelanggan.UpdatePelanggan" />
         <activity android:name=".ui.pelanggan.LihatPelanggan" />
         <activity android:name=".ui.pelanggan.DataPelanggan" />
         <activity android:name=".ui.halamanutama.HalamanUtama" />

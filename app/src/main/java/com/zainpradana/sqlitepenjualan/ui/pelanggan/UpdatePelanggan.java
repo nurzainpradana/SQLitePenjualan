@@ -25,7 +25,7 @@ public class UpdatePelanggan extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_pelanggan);
         dbHelper = new DataHelper(this);
-        etKodePelanggan = findViewById(R.id.et_kd_pelanggan);
+        etKodePelanggan = findViewById(R.id.et_kode_pelanggan);
         etNamaPelanggan = findViewById(R.id.et_nama_pelanggan);
         etTelp = findViewById(R.id.et_telp);
 

@@ -35,8 +35,8 @@ public class DataPelanggan extends AppCompatActivity {
 
         btnTambahPelanggan = findViewById(R.id.bt_tambah_dokter);
         btnTambahPelanggan.setOnClickListener(view -> {
-//            Intent goToTambahPelanggan = new Intent(DataPelanggan.this, TambahPelanggan.class);
-//            startActivity(goToTambahPelanggan);
+            Intent goToTambahPelanggan = new Intent(DataPelanggan.this, TambahPelanggan.class);
+            startActivity(goToTambahPelanggan);
         });
 
         dp = this;

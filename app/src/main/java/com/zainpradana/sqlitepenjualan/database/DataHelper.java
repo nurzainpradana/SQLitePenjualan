@@ -16,7 +16,7 @@ public class DataHelper extends SQLiteOpenHelper {
 
         //db.execSQL("CREATE TABLE pasien(norekam integer primary key, tanggal_rekam text, nopasien integer, nodokter text, agama text, telp text, alamat text)");
 
-        db.execSQL("CREATE TABLE pelanggan (kd_pelanggan int(5) NOT NULL, nama_pelanggan text NOT NULL, telp text NOT NULL)");
+        db.execSQL("CREATE TABLE pelanggan (kd_pelanggan int(5) NOT NULL PRIMARY KEY, nama_pelanggan text NOT NULL, telp text NOT NULL)");
         db.execSQL("INSERT INTO pelanggan (kd_pelanggan, nama_pelanggan, telp) VALUES (1001, 'Dinny Susilowati', '08577110779')");
         db.execSQL("INSERT INTO pelanggan (kd_pelanggan, nama_pelanggan, telp) VALUES (1002, 'Afif Mahar Widodo', '08988981908')");
         db.execSQL("INSERT INTO pelanggan (kd_pelanggan, nama_pelanggan, telp) VALUES (1003, 'Didik Setya Budi', '083830082299')");
@@ -33,12 +33,12 @@ public class DataHelper extends SQLiteOpenHelper {
         db.execSQL("INSERT INTO pelanggan (kd_pelanggan, nama_pelanggan, telp) VALUES (1014, 'Ariq Andrean', '081285459750')");
         db.execSQL("INSERT INTO pelanggan (kd_pelanggan, nama_pelanggan, telp) VALUES (1015, 'Dede Khairuddin', '085714266056')");
 
-        db.execSQL("CREATE TABLE barang (kd_barang int(11) NOT NULL, nama_barang text DEFAULT NULL, satuan text DEFAULT NULL, harga int(11) DEFAULT NULL)");
+        db.execSQL("CREATE TABLE barang (kd_barang int(11) NOT NULL PRIMARY KEY, nama_barang text DEFAULT NULL, satuan text DEFAULT NULL, harga int(11) DEFAULT NULL)");
         db.execSQL("INSERT INTO barang (kd_barang, nama_barang, satuan, harga) VALUES (200001, 'Lemari Es Toshiba 2 Pintu', 'Unit', 2700000)");
         db.execSQL("INSERT INTO barang (kd_barang, nama_barang, satuan, harga) VALUES (200002, 'TV Xiomi Android 32 inc', 'Unit', 2000000)");
         db.execSQL("INSERT INTO barang (kd_barang, nama_barang, satuan, harga) VALUES (200003, 'Kabel Antena ', 'Roll', 750000)");
 
-        db.execSQL("CREATE TABLE penjualan (id_penjualan int(11) NOT NULL, tgl_penjualan date NOT NULL, kd_pelanggan int(11) NOT NULL, kd_barang int(11) NOT NULL, qty int(11) NOT NULL)");
+        db.execSQL("CREATE TABLE penjualan (id_penjualan int(11) NOT NULL PRIMARY KEY, tgl_penjualan date NOT NULL, kd_pelanggan int(11) NOT NULL, kd_barang int(11) NOT NULL, qty int(11) NOT NULL)");
         db.execSQL("INSERT INTO penjualan (id_penjualan, tgl_penjualan, kd_pelanggan, kd_barang, qty) VALUES (3001, '2020-11-26', 1001, 200001, 1)");
         db.execSQL("INSERT INTO penjualan (id_penjualan, tgl_penjualan, kd_pelanggan, kd_barang, qty) VALUES (3002, '2020-11-26', 1002, 200002, 2)");
         db.execSQL("INSERT INTO penjualan (id_penjualan, tgl_penjualan, kd_pelanggan, kd_barang, qty) VALUES (3003, '2020-11-26', 1003, 200003, 5)");
