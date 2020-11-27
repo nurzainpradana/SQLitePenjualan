@@ -35,8 +35,8 @@ public class DataPelanggan extends AppCompatActivity {
 
         btnTambahPelanggan = findViewById(R.id.bt_tambah_dokter);
         btnTambahPelanggan.setOnClickListener(view -> {
-            Intent goToTambahPelanggan = new Intent(DataPelanggan.this, TambahPelanggan.class);
-            startActivity(goToTambahPelanggan);
+//            Intent goToTambahPelanggan = new Intent(DataPelanggan.this, TambahPelanggan.class);
+//            startActivity(goToTambahPelanggan);
         });
 
         dp = this;
@@ -72,15 +72,15 @@ public class DataPelanggan extends AppCompatActivity {
                         switch (item){
                             case 0:
                                 Intent goToLihatPelanggan = new Intent(DataPelanggan.this, LihatPelanggan.class);
-                                goToLihatPelanggan.putExtra("nopelanggan", selection);
+                                goToLihatPelanggan.putExtra("kd_pelanggan", selection);
                                 startActivity(goToLihatPelanggan);
                                 break;
 
                             case 1:
-                                Intent goToUpdatePelanggan = new Intent(DataPelanggan.this, UpdatePelanggan.class);
-                                goToUpdatePelanggan.putExtra("nopelanggan", selection);
-                                Toast.makeText(getApplicationContext(), selection.toString(), Toast.LENGTH_SHORT).show();
-                                startActivity(goToUpdatePelanggan);
+//                                Intent goToUpdatePelanggan = new Intent(DataPelanggan.this, UpdatePelanggan.class);
+//                                goToUpdatePelanggan.putExtra("nopelanggan", selection);
+//                                Toast.makeText(getApplicationContext(), selection.toString(), Toast.LENGTH_SHORT).show();
+//                                startActivity(goToUpdatePelanggan);
                                 break;
 
                             case 2:

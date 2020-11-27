@@ -27,13 +27,13 @@ public class HalamanUtama extends AppCompatActivity {
         });
 
         buttonDataBarang.setOnClickListener(view -> {
-            Intent goToDataBarang = new Intent(HalamanUtama.this, DataBarang.class);
-            startActivity(goToDataBarang);
+//            Intent goToDataBarang = new Intent(HalamanUtama.this, DataBarang.class);
+//            startActivity(goToDataBarang);
         });
 
         buttonPenjualan.setOnClickListener(view -> {
-            Intent goToDataPenjualan = new Intent(HalamanUtama.this, DataPenjualan.class);
-            startActivity(goToDataPenjualan);
+//            Intent goToDataPenjualan = new Intent(HalamanUtama.this, DataPenjualan.class);
+//            startActivity(goToDataPenjualan);
         });
 
 
