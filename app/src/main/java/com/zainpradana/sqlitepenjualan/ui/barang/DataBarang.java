@@ -34,8 +34,8 @@ public class DataBarang extends AppCompatActivity {
 
         btnTambahBarang = findViewById(R.id.bt_tambah_barang);
         btnTambahBarang.setOnClickListener(view -> {
-//            Intent goToTambahBarang = new Intent(DataBarang.this, TambahBarang.class);
-//            startActivity(goToTambahBarang);
+            Intent goToTambahBarang = new Intent(DataBarang.this, TambahBarang.class);
+            startActivity(goToTambahBarang);
         });
 
         dp = this;
@@ -76,9 +76,9 @@ public class DataBarang extends AppCompatActivity {
                                 break;
 
                             case 1:
-//                                Intent goToUpdateBarang = new Intent(DataBarang.this, UpdateBarang.class);
-//                                goToUpdateBarang.putExtra("kd_barang", selection);
-//                                startActivity(goToUpdateBarang);
+                                Intent goToUpdateBarang = new Intent(DataBarang.this, UpdateBarang.class);
+                                goToUpdateBarang.putExtra("kd_barang", selection);
+                                startActivity(goToUpdateBarang);
                                 break;
 
                             case 2:
