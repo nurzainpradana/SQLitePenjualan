@@ -70,9 +70,9 @@ public class DataBarang extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int item) {
                         switch (item){
                             case 0:
-//                                Intent goToLihatBarang = new Intent(DataBarang.this, LihatBarang.class);
-//                                goToLihatBarang.putExtra("kd_barang", selection);
-//                                startActivity(goToLihatBarang);
+                                Intent goToLihatBarang = new Intent(DataBarang.this, LihatBarang.class);
+                                goToLihatBarang.putExtra("kd_barang", selection);
+                                startActivity(goToLihatBarang);
                                 break;
 
                             case 1:
