@@ -77,15 +77,14 @@ public class DataPelanggan extends AppCompatActivity {
                                 break;
 
                             case 1:
-//                                Intent goToUpdatePelanggan = new Intent(DataPelanggan.this, UpdatePelanggan.class);
-//                                goToUpdatePelanggan.putExtra("nopelanggan", selection);
-//                                Toast.makeText(getApplicationContext(), selection.toString(), Toast.LENGTH_SHORT).show();
-//                                startActivity(goToUpdatePelanggan);
+                                Intent goToUpdatePelanggan = new Intent(DataPelanggan.this, UpdatePelanggan.class);
+                                goToUpdatePelanggan.putExtra("kd_pelanggan", selection);
+                                startActivity(goToUpdatePelanggan);
                                 break;
 
                             case 2:
                                 SQLiteDatabase db = dbCenter.getWritableDatabase();
-                                db.execSQL("DELETE FROM pelanggan WHERE nopelanggan = '"+ selection + "'");
+                                db.execSQL("DELETE FROM pelanggan WHERE kd_pelanggan = '"+ selection + "'");
                                 RefreshList();
                                 break;
                         }
