@@ -42,13 +42,13 @@ public class DataHelper extends SQLiteOpenHelper {
         db.execSQL("INSERT INTO penjualan (id_penjualan, tgl_penjualan, kd_pelanggan, kd_barang, qty) VALUES (3001, '2020-11-26', 1001, 200001, 1)");
         db.execSQL("INSERT INTO penjualan (id_penjualan, tgl_penjualan, kd_pelanggan, kd_barang, qty) VALUES (3002, '2020-11-26', 1002, 200002, 2)");
         db.execSQL("INSERT INTO penjualan (id_penjualan, tgl_penjualan, kd_pelanggan, kd_barang, qty) VALUES (3003, '2020-11-26', 1003, 200003, 5)");
-        db.execSQL("INSERT INTO penjualan (id_penjualan, tgl_penjualan, kd_pelanggan, kd_barang, qty) VALUES (3004, '2020-11-26', 1004, 200004, 2)");
-        db.execSQL("INSERT INTO penjualan (id_penjualan, tgl_penjualan, kd_pelanggan, kd_barang, qty) VALUES (3005, '2020-11-26', 1005, 200005, 2)");
+        db.execSQL("INSERT INTO penjualan (id_penjualan, tgl_penjualan, kd_pelanggan, kd_barang, qty) VALUES (3004, '2020-11-26', 1004, 200003, 2)");
+        db.execSQL("INSERT INTO penjualan (id_penjualan, tgl_penjualan, kd_pelanggan, kd_barang, qty) VALUES (3005, '2020-11-26', 1005, 200001, 2)");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
-        db.execSQL("DROP TABLE pelanggan");
+        db.execSQL("DROP  TABLE pelanggan");
         db.execSQL("DROP TABLE barang");
         db.execSQL("DROP TABLE penjualan");
     }

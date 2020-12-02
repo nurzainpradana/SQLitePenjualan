@@ -20,7 +20,6 @@ import com.zainpradana.sqlitepenjualan.database.DataHelper;
 import com.zainpradana.sqlitepenjualan.ui.penjualan.DataPenjualan;
 import com.zainpradana.sqlitepenjualan.ui.penjualan.LihatPenjualan;
 import com.zainpradana.sqlitepenjualan.ui.penjualan.TambahPenjualan;
-import com.zainpradana.sqlitepenjualan.ui.penjualan.UpdatePenjualan;
 
 public class DataPenjualan extends AppCompatActivity {
     public static DataPenjualan dp;
@@ -60,7 +59,7 @@ public class DataPenjualan extends AppCompatActivity {
         }
 
         listViewPenjualan = findViewById(R.id.listview_data_penjualan);
-        listViewPenjualan.setAdapter(new ArrayAdapter(this, android.R.layout.simple_list_item_1, daftarPenjualan));
+        listViewPenjualan.setAdapter(new ArrayAdapter(this, android.R.layout.simple_list_item_1, daftarNomorPenjualan));
         listViewPenjualan.setSelected(true);
         listViewPenjualan.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -75,14 +74,14 @@ public class DataPenjualan extends AppCompatActivity {
                         switch (item){
                             case 0:
                                 Intent goToLihatPenjualan = new Intent(DataPenjualan.this, LihatPenjualan.class);
-                                goToLihatPenjualan.putExtra("kd_penjualan", selection);
+                                goToLihatPenjualan.putExtra("id_penjualan", selection);
                                 startActivity(goToLihatPenjualan);
                                 break;
 
                             case 1:
-                                Intent goToUpdatePenjualan = new Intent(DataPenjualan.this, UpdatePenjualan.class);
-                                goToUpdatePenjualan.putExtra("kd_penjualan", selection);
-                                startActivity(goToUpdatePenjualan);
+//                                Intent goToUpdatePenjualan = new Intent(DataPenjualan.this, UpdatePenjualan.class);
+//                                goToUpdatePenjualan.putExtra("id_penjualan", selection);
+//                                startActivity(goToUpdatePenjualan);
                                 break;
 
                             case 2:

@@ -9,6 +9,7 @@ import android.widget.Button;
 import com.zainpradana.sqlitepenjualan.R;
 import com.zainpradana.sqlitepenjualan.ui.barang.DataBarang;
 import com.zainpradana.sqlitepenjualan.ui.pelanggan.DataPelanggan;
+import com.zainpradana.sqlitepenjualan.ui.penjualan.DataPenjualan;
 
 public class HalamanUtama extends AppCompatActivity {
     Button buttonDataPelanggan, buttonDataBarang, buttonPenjualan;
@@ -33,8 +34,8 @@ public class HalamanUtama extends AppCompatActivity {
         });
 
         buttonPenjualan.setOnClickListener(view -> {
-//            Intent goToDataPenjualan = new Intent(HalamanUtama.this, DataPenjualan.class);
-//            startActivity(goToDataPenjualan);
+            Intent goToDataPenjualan = new Intent(HalamanUtama.this, DataPenjualan.class);
+            startActivity(goToDataPenjualan);
         });
 
 
