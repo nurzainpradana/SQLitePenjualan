@@ -98,6 +98,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Harga Barang" />
+        <TextView
+            android:id="@+id/tv_harga_barang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Total" />
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
         <Button
             android:id="@+id/button_kembali"
             android:layout_width="match_parent"
