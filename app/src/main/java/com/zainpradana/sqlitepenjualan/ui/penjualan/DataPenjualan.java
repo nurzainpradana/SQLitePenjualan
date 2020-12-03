@@ -79,9 +79,9 @@ public class DataPenjualan extends AppCompatActivity {
                                 break;
 
                             case 1:
-//                                Intent goToUpdatePenjualan = new Intent(DataPenjualan.this, UpdatePenjualan.class);
-//                                goToUpdatePenjualan.putExtra("id_penjualan", selection);
-//                                startActivity(goToUpdatePenjualan);
+                                Intent goToUpdatePenjualan = new Intent(DataPenjualan.this, UpdatePenjualan.class);
+                                goToUpdatePenjualan.putExtra("id_penjualan", selection);
+                                startActivity(goToUpdatePenjualan);
                                 break;
 
                             case 2:
